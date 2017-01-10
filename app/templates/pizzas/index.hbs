@@ -1,0 +1,21 @@
+<!-- app/templates/libraries/index.hbs -->
+<h2>Menu</h2>
+<div class="row">
+  {{#each model as |pizza|}}
+    <div class="col-md-12">
+      <div class="panel panel-default library-item">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{pizza.name}}</h3>
+        </div>
+        <div class="panel-body">
+          <p>mała: {{pizza.small}} zł, &nbsp;&nbsp;&nbsp; średnia: {{pizza.medium}} zł, &nbsp;&nbsp;&nbsp; duża: {{pizza.large}} zł </p>
+          <p>opis: {{pizza.desc}}</p>
+        </div>
+        <div class="panel-footer text-right">
+          {{#link-to 'pizzas.edit' pizza.id class='btn btn-success btn-xs'}}Edytuj{{/link-to}}
+          <button class="btn btn-danger btn-xs" {{action 'deleteLibrary' pizza}}>Usuń</button>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
