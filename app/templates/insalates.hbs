@@ -1,0 +1,11 @@
+<!-- app/templates/libraries.hbs -->
+<h1>Sałatki</h1>
+
+<div class="well">
+  <ul class="nav nav-pills">
+    {{#link-to 'insalates.index' tagName="li"}}<a href="">Pokaż wszystkie</a>{{/link-to}}
+    {{#link-to 'insalates.new' tagName="li"}}<a href="">Dodaj nową sałatkę</a>{{/link-to}}
+  </ul>
+</div>
+
+{{outlet}}

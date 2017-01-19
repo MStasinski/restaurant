@@ -4,16 +4,16 @@ import Ember from 'ember';
 export default Ember.Route.extend({
 
   model() {
-    return this.store.findAll('pizza');
+    return this.store.findAll('insalate');
   },
 
   actions: {
 
-    deleteLibrary(pizza) {
+    deleteLibrary(insalate) {
       let confirmation = confirm('Czy jesteś pewny?');
 
       if (confirmation) {
-        pizza.destroyRecord();
+        insalate.destroyRecord();
       }
     }
   }

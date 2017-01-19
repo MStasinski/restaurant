@@ -7,11 +7,11 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     firebase: {
-          apiKey: 'AIzaSyCLXgVyUV7RNUpAUvXlJSDI3qVzQuxs1cE',
-          authDomain: 'testowy-122ed.firebaseapp.com',
-          databaseURL: 'https://testowy-122ed.firebaseio.com',
-          storageBucket: 'testowy-122ed.appspot.com',
-          messagingSenderId: '999568304343'
+           apiKey: "AIzaSyAgK0Z-IBp2HOeMI22rGb8usfZd4KzUiE0",
+           authDomain: "distrada-7d516.firebaseapp.com",
+           databaseURL: "https://distrada-7d516.firebaseio.com",
+          storageBucket: "distrada-7d516.appspot.com",
+          messagingSenderId: "416958424421"
         },
     
 
