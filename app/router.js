@@ -21,10 +21,14 @@ Router.map(function() {
     this.route('new');
     this.route('edit', { path: '/:insalate_id/edit' });
   });
+  this.route('alfornos', function() {
+    this.route('new');
+    this.route('edit', { path: '/:alforno_id/edit' });
+  });
   
   
   this.route('pasta');
-  this.route('alforno');
+ 
   this.route('secondi');
   this.route('dolci');
   this.route('napoje');

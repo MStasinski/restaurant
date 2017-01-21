@@ -19,6 +19,46 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/templates/insalates/new.hbs",
+			"settings":
+			{
+				"buffer_size": 1162,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/alfornos/edit.hbs",
+			"settings":
+			{
+				"buffer_size": 1100,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/alfornos/edit.js",
+			"settings":
+			{
+				"buffer_size": 684,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/zuppas/edit.js",
+			"settings":
+			{
+				"buffer_size": 678,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/pizza.js",
+			"settings":
+			{
+				"buffer_size": 176,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -65,10 +105,86 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Mobilny system zarzadzania biznesem/restaurant"
+		"/D/Mobilny system zarzadzania biznesem/restaurant",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/adapters",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/components",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/alfornos",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/insalates",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/pizzas",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/zuppas",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/alfornos",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/insalates",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/pizzas",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/zuppas",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alfornos",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/zuppas",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/config",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/dist",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/public",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/vendor"
 	],
 	"file_history":
 	[
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alfornos/new.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas/index.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/zuppas/edit.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/zuppas/index.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas/new.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/zuppas/new.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/alforno.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/insalate.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/pizza.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/zuppa.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas/edit.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/insalates/edit.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alfornos/index.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/insalates/index.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alfornos/edit.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/pizzas/index.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/pizzas/index.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/insalates/index.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/alfornos/index.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alfornos.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/router.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/alfornos/edit.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/alfornos/new.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/alfornos/index.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/navbar.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/zuppas/alofrnos",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/pizzas",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/pizza.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/insalates/new.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/insalates/index.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/insalates/new.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/insalates/edit.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/napoje.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pasta.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/secondi.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alforno.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/dolci.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/insalates.hbs",
+		"/C/Users/win8/Desktop/distrada-7d516-export.json",
+		"/C/Users/win8/Desktop/testowy-122ed-export.json",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/zuppas/index.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/.firebaserc",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/zuppas.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/config/environment.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/firebase.json",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/database.rules.json",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/dist",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/restaurant.sublime-workspace",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/restaurant.sublime-project",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/zuppas/new.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/zuppas/edit.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/zuppa.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/insalate.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas.hbs",
 		"/D/Mobilny system zarzadzania biznesem/library-app/app/templates/navbar.hbs",
 		"/D/Mobilny system zarzadzania biznesem/library-app/app/templates/index.hbs",
 		"/D/Mobilny system zarzadzania biznesem/library-app/config/environment.js",
@@ -164,8 +280,157 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/templates/insalates/new.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								726,
+								726
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/templates/alfornos/edit.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1100,
+								1100
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/routes/alfornos/edit.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 684,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								197
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/routes/zuppas/edit.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 678,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/models/pizza.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -246,7 +511,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 228.0,
+	"side_bar_width": 535.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

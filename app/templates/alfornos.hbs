@@ -1,0 +1,11 @@
+<!-- app/templates/libraries.hbs -->
+<h1>Pasta</h1>
+
+<div class="well">
+  <ul class="nav nav-pills">
+    {{#link-to 'alfornos.index' tagName="li"}}<a href="">Pokaż wszystkie</a>{{/link-to}}
+    {{#link-to 'alfornos.new' tagName="li"}}<a href="">Dodaj nową pastę</a>{{/link-to}}
+  </ul>
+</div>
+
+{{outlet}}

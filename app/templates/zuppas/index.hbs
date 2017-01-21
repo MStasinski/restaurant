@@ -1,14 +1,20 @@
 
 <h2>Menu</h2>
 <div class="row">
-  {{#each model as |zuppa|}}
+  {{#each sortedModel as |zuppa|}}
     <div class="col-md-12">
       <div class="panel panel-default library-item">
+        
         <div class="panel-heading">
-          <h3 class="panel-title">{{zuppa.name}}</h3>
+          <h3 class="panel-title">ID: {{zuppa.rank}}&nbsp;&nbsp;&nbsp;&nbsp; {{zuppa.name}}</h3>
         </div>
+
         <div class="panel-body">
-         
+          <h3 class="panel-title">Cena: {{zuppa.price}}</h3>
+        </div>
+
+        
+        <div class="panel-body">
           <p>opis: {{zuppa.desc}}</p>
         </div>
         <div class="panel-footer text-right">
