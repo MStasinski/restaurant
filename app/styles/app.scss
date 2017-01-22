@@ -1,7 +1,14 @@
 @import 'bootstrap';
+@import url(https://fonts.googleapis.com/css?family=Oswald:300);
+
+
+
 
 body {
   padding-top: 20px;
+    font-family: 'Oswald', sans-serif !important;
+	background: #2E394A !important;
+	background: url('bg.png') no-repeat center center fixed !important;
 }
 
 html {
@@ -9,5 +16,11 @@ html {
 }
 
 .library-item {
-  min-height: 150px;
+  min-height: 100px;
+}
+
+
+.navbar {
+    background-color: rgba(33,52,56,.80) !important;
+    
 }
