@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ti",
+				"title"
+			],
+			[
 				"p",
 				"post"
 			],
@@ -20,43 +24,19 @@
 	"buffers":
 	[
 		{
-			"file": "app/templates/insalates/new.hbs",
+			"file": "app/controllers/notification.js",
 			"settings":
 			{
-				"buffer_size": 1162,
+				"buffer_size": 408,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/templates/alfornos/edit.hbs",
+			"file": "app/router.js",
 			"settings":
 			{
-				"buffer_size": 1100,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/routes/alfornos/edit.js",
-			"settings":
-			{
-				"buffer_size": 684,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/routes/zuppas/edit.js",
-			"settings":
-			{
-				"buffer_size": 678,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/pizza.js",
-			"settings":
-			{
-				"buffer_size": 176,
-				"line_ending": "Unix"
+				"buffer_size": 848,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -107,61 +87,76 @@
 	[
 		"/D/Mobilny system zarzadzania biznesem/restaurant",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/adapters",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/components",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/alfornos",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/insalates",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/pizzas",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/zuppas",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/helpers",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/alfornos",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/insalates",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/pizzas",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/zuppas",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/styles",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alfornos",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/zuppas",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/config",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/dist",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/public",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/vendor"
+		"/D/Mobilny system zarzadzania biznesem/restaurant/public"
 	],
 	"file_history":
 	[
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alfornos/new.hbs",
+		"//michal-stasinski.type.pl@SSL@2078/DavWWWRoot/public_html/notyfikacje/firebase.php",
+		"//michal-stasinski.type.pl@SSL@2078/DavWWWRoot/public_html/notyfikacje/config.php",
+		"//michal-stasinski.type.pl@SSL@2078/DavWWWRoot/public_html/notyfikacje/start.php",
+		"//michal-stasinski.type.pl@SSL@2078/DavWWWRoot/public_html/notyfikacje/push.php",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/notification.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/notification.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/public/config.php",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/start.php",
+		"/C/Users/win8/Desktop/Firebase Notifications/Firebase Notifications/firebase/start.php",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/napoje.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/notification.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/public/start.php",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/styles/app.scss",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/public/test.php",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/pizzas/index.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/public/firebase.php",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/public/push.php",
+		"/C/Users/win8/Desktop/Firebase Notifications/Firebase Notifications/firebase/firebase.php",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/notification.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/navbar.hbs",
+		"/C/Users/win8/Desktop/Firebase Notifications/Firebase Notifications/firebase/push.php",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/alforno.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/.gitkeep",
+		"/C/Users/win8/Desktop/Firebase Notifications/Firebase Notifications/firebase/index.php",
+		"/C/Users/win8/Desktop/json-api-master/json-api-master/composer.json",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alfornos.hbs",
+		"//michal-stasinski.type.pl@SSL@2078/DavWWWRoot/public_html/notyfikacje/index.php",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/alfornos/index.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/insalates/index.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/insalates/new.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/dist/index.html",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/router.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas/index.hbs",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/zuppas/edit.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alfornos/edit.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/alfornos/edit.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/application.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/zuppas/index.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/pizza.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alfornos/new.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/zuppas/edit.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas/new.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/zuppas/new.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/alforno.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/insalate.js",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/pizza.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/zuppa.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas/edit.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/insalates/edit.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alfornos/index.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/insalates/index.hbs",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alfornos/edit.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/pizzas/index.js",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/pizzas/index.js",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/insalates/index.js",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/alfornos/index.js",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alfornos.hbs",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/router.js",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/alfornos/edit.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/alfornos/new.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/alfornos/index.js",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/navbar.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/zuppas/alofrnos",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/pizzas",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/pizza.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/insalates/new.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/insalates/index.js",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/insalates/new.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/insalates/edit.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/napoje.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pasta.hbs",
@@ -184,7 +179,6 @@
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/zuppas/edit.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/zuppa.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/insalate.hbs",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas.hbs",
 		"/D/Mobilny system zarzadzania biznesem/library-app/app/templates/navbar.hbs",
 		"/D/Mobilny system zarzadzania biznesem/library-app/app/templates/index.hbs",
 		"/D/Mobilny system zarzadzania biznesem/library-app/config/environment.js",
@@ -232,23 +226,11 @@
 		"/D/Ember/yoember/app/templates/admin/invitations.hbs",
 		"/D/Ember/yoember/app/controllers/index.js",
 		"/D/Ember/yoember/app/resolver.js",
-		"/D/Ember/yoember/library-app/app/styles/app.scss",
-		"/D/Ember/yoember/library-app/config/environment.js",
-		"/D/Ember/yoember/library-app/app/templates/navbar.hbs",
-		"/D/Ember/yoember/library-app/app/templates/contact.hbs",
-		"/D/Ember/yoember/library-app/app/templates/about.hbs",
-		"/D/Ember/yoember/library-app/app/templates/application.hbs",
-		"/D/Ember/yoember/library-app/app/templates/index.hbs",
-		"/C/Users/win8/Desktop/poczatek/script.js",
-		"/D/Ember/torii_test/app/adapters/application.js",
-		"/C/Users/win8/Desktop/poczatek/index.html",
-		"/D/Ember/torii-twitter-example/public/app/adapters/application.js",
-		"/C/Users/win8/Desktop/kurs_javascript/materialy_do_kursu/lekcje/3/3_3/poczatek/script.js",
-		"/C/Users/win8/Desktop/kurs_javascript/materialy_do_kursu/lekcje/3/3_3/poczatek/index.html"
+		"/D/Ember/yoember/library-app/app/styles/app.scss"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -280,114 +262,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/templates/insalates/new.hbs",
+					"file": "app/controllers/notification.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1162,
+						"buffer_size": 408,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								726,
-								726
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/templates/alfornos/edit.hbs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1100,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1100,
-								1100
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/routes/alfornos/edit.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 684,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								197,
-								197
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/routes/zuppas/edit.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 678,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								217,
+								217
 							]
 						],
 						"settings":
@@ -404,31 +296,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/models/pizza.js",
+					"buffer": 1,
+					"file": "app/router.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 176,
+						"buffer_size": 848,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								816,
+								816
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -511,7 +405,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 535.0,
+	"side_bar_width": 280.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

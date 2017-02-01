@@ -32,6 +32,7 @@ Router.map(function() {
   this.route('secondi');
   this.route('dolci');
   this.route('napoje');
+   this.route('notification');
 });
 
 export default Router;
