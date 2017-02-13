@@ -1,0 +1,26 @@
+
+<div class="row">
+  {{#each  sortedModel as |pasta|}}
+    <div class="col-md-12">
+      <div class="panel panel-default library-item">
+      
+        <div class="panel-heading">
+          <h3 class="panel-title">ID: {{pasta.rank}}&nbsp;&nbsp;&nbsp;&nbsp; {{pasta.name}}</h3>
+        </div>
+
+        <div class="panel-body">
+          <h3 class="panel-title">Cena: {{pasta.price}}</h3>
+        </div>
+
+        <div class="panel-body">
+          <h3 class="panel-title">Opis: {{pasta.desc}}</h3>
+        </div>
+
+        <div class="panel-footer text-right">
+          {{#link-to 'pastas.edit' pasta.id class='btn btn-success btn-xs'}}Edytuj{{/link-to}}
+          <button class="btn btn-danger btn-xs" {{action 'deleteLibrary' pasta}}>Usuń</button>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

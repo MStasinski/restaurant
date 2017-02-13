@@ -1,0 +1,26 @@
+
+<div class="row">
+  {{#each sortedModel as |drink|}}
+    <div class="col-md-12">
+      <div class="panel panel-default library-item">
+       
+        <div class="panel-heading">
+          <h3 class="panel-title">ID: {{drink.rank}}&nbsp;&nbsp;&nbsp;&nbsp; {{drink.name}}</h3>
+        </div>
+
+        <div class="panel-body">
+          <h3 class="panel-title">Cena: {{drink.price}}</h3>
+        </div>
+       
+        <div class="panel-body">
+          <p>opis: {{drink.desc}}</p>
+        </div>
+        
+        <div class="panel-footer text-right">
+          {{#link-to 'drinks.edit' drink.id class='btn btn-success btn-xs'}}Edytuj{{/link-to}}
+          <button class="btn btn-danger btn-xs" {{action 'deleteLibrary' drink}}>Usuń</button>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

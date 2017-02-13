@@ -1,0 +1,26 @@
+
+<div class="row">
+  {{#each  sortedModel as |secondi|}}
+    <div class="col-md-12">
+      <div class="panel panel-default library-item">
+      
+        <div class="panel-heading">
+          <h3 class="panel-title">ID: {{secondi.rank}}&nbsp;&nbsp;&nbsp;&nbsp; {{secondi.name}}</h3>
+        </div>
+
+        <div class="panel-body">
+          <h3 class="panel-title">Cena: {{secondi.price}}</h3>
+        </div>
+
+        <div class="panel-body">
+          <h3 class="panel-title">Opis: {{secondi.desc}}</h3>
+        </div>
+
+        <div class="panel-footer text-right">
+          {{#link-to 'secondis.edit' secondi.id class='btn btn-success btn-xs'}}Edytuj{{/link-to}}
+          <button class="btn btn-danger btn-xs" {{action 'deleteLibrary' secondi}}>Usuń</button>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

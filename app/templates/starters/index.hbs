@@ -1,0 +1,26 @@
+
+<div class="row">
+  {{#each  sortedModel as |starter|}}
+    <div class="col-md-12">
+      <div class="panel panel-default library-item">
+      
+        <div class="panel-heading">
+          <h3 class="panel-title">ID: {{starter.rank}}&nbsp;&nbsp;&nbsp;&nbsp; {{starter.name}}</h3>
+        </div>
+
+        <div class="panel-body">
+          <h3 class="panel-title">Cena: {{starter.price}}</h3>
+        </div>
+
+        <div class="panel-body">
+          <h3 class="panel-title">Opis: {{starter.desc}}</h3>
+        </div>
+
+        <div class="panel-footer text-right">
+          {{#link-to 'starters.edit' starter.id class='btn btn-success btn-xs'}}Edytuj{{/link-to}}
+          <button class="btn btn-danger btn-xs" {{action 'deleteLibrary' starter}}>Usuń</button>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
