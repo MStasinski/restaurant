@@ -1,0 +1,42 @@
+<form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Tytuł</label>
+ {{input type="email" value=titleM class="form-control" placeholder="Please type your e-mail address." autofocus="autofocus"}}
+  </div>
+
+  <div class="form-group">
+    <label  for="exampleTextarea">Wiadomość</label>
+    {{input type="email" value=messageM class="form-control" placeholder="Please type your e-mail address." autofocus="autofocus"}}
+  </div>
+   
+  <div class="form-group">
+
+   </div>
+       
+     
+
+    <div class="form-group">
+           <div class="fcol-sm-10"> 
+         
+           {{x-file-input class="custom-class" multiple=false name="files" action=(action "didSelectImage") accept="image/*" alt="Dodaj zdjęcie"}}
+           </div> 
+    </div>
+ {{#if progress}}
+      <div style="margin-top:50px;">
+        <progress class="progress progress-success" value={{progress}} max="100"></progress>
+      </div>
+    {{/if}}
+
+    {{#if status}}
+      <p class="text-primary">{{progressText}}</p>
+    {{/if}}
+
+    {{#if downloadURL}}
+      <div class="text-center">
+        <img src="{{downloadURL}}" alt="" class="img-responsive img-rounded">
+      </div>
+    {{/if}}
+          
+
+</form>
+

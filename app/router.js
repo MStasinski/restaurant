@@ -49,7 +49,7 @@ Router.map(function() {
   });
 
  
-
+ this.route('news');
    this.route('notification');
 });
 

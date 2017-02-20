@@ -1,7 +1,17 @@
 @import 'bootstrap';
 @import url(https://fonts.googleapis.com/css?family=Oswald:300);
 
-
+img-responsive {
+  max-width:100% !important;
+  height:auto;
+  display:block;
+}
+.img-rounded {
+  border-radius: 6px;
+}
+.text-center {
+  text-align: center;
+}
 
 
 body {
