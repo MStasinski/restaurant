@@ -43,9 +43,15 @@ Router.map(function() {
     this.route('new');
     this.route('edit', { path: '/:secondi_id/edit' });
   });
+
   this.route('drinks', function() {
     this.route('new');
     this.route('edit', { path: '/:drink_id/edit' });
+  });
+
+  this.route('blogs', function() {
+    this.route('new');
+    this.route('edit', { path: '/:blog_id/edit' });
   });
 
  

@@ -1,0 +1,40 @@
+
+
+<div class="form-horizontal">
+  
+  <div class="form-group">
+    <label class="col-sm-2 control-label">id</label>
+    <div class="col-sm-10">
+      {{input type="text" value=model.rank class="form-control" placeholder="wpisz id"}}
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Nazwa </label>
+    <div class="col-sm-10">
+      {{input type="text" value=model.name class="form-control" placeholder="wpisz nazwę"}}
+    </div>
+  </div>
+ 
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Cena</label>
+    <div class="col-sm-10">
+      {{input type="text" value=model.price class="form-control" placeholder="wpisz cenę"}}
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">opis</label>
+    <div class="col-sm-10">
+      {{input type="text" value=model.desc class="form-control" placeholder="wpisz opis"}}
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default"
+        {{action 'saveLibrary' model }}
+    >Dodaj do menu</button>
+    </div>
+  </div>
+</div>

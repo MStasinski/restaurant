@@ -1,0 +1,10 @@
+<h1>TWOJE POSTY</h1>
+
+<div class="well">
+  <ul class="nav nav-pills">
+    {{#link-to 'blogs.index' tagName="li"}}<a href="">Pokaż wszystkie</a>{{/link-to}}
+    {{#link-to 'blogs.new' tagName="li"}}<a href="">Dodaj nowy post</a>{{/link-to}}
+  </ul>
+</div>
+
+{{outlet}}
