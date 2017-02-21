@@ -12,15 +12,14 @@
   <div class="form-group">
 
    </div>
+      
+  <div class="form-group">
+         <div class="fcol-sm-10"> 
        
-     
+         {{x-file-input class="custom-class" multiple=false name="files" action = (action "didSelectImage") accept="image/*" alt="Dodaj zdjęcie"}}
+         </div> 
+  </div>
 
-    <div class="form-group">
-           <div class="fcol-sm-10"> 
-         
-           {{x-file-input class="custom-class" multiple=false name="files" action=(action "didSelectImage") accept="image/*" alt="Dodaj zdjęcie"}}
-           </div> 
-    </div>
  {{#if progress}}
       <div style="margin-top:50px;">
         <progress class="progress progress-success" value={{progress}} max="100"></progress>

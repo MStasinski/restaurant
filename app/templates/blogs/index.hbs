@@ -5,21 +5,30 @@
       <div class="panel panel-default library-item">
       
         <div class="panel-heading">
-          <h3 class="panel-title">ID: {{blog.rank}}&nbsp;&nbsp;&nbsp;&nbsp; {{blog.name}}</h3>
+          <h3 class="panel-title">TYTUŁ: {{blog.title}}&nbsp;&nbsp;&nbsp;&nbsp; {{blog.name}}</h3>
         </div>
 
+        
         <div class="panel-body">
-          <h3 class="panel-title">Cena: {{blog.price}}</h3>
+          <p>WIADOMOŚĆ: {{blog.news}}</p>
         </div>
 
+
         <div class="panel-body">
-          <p>opis: {{blog.desc}}</p>
+          <p>{{blog.date}}</p>
+        </div>
+
+
+        <div class="panel-body">
+        <img height="200" width="200"src="{{blog.imageUrl}}" alt="">
         </div>
 
         <div class="panel-footer text-right">
           {{#link-to 'blogs.edit' blog.id class='btn btn-success btn-xs'}}Edytuj{{/link-to}}
           <button class="btn btn-danger btn-xs" {{action 'deleteLibrary' blog}}>Usuń</button>
         </div>
+
+
       </div>
     </div>
   {{/each}}

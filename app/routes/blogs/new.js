@@ -8,9 +8,15 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    saveLibrary(newLibrary) {
-      newLibrary.save().then(() => this.transitionTo('blogs'));
-    },
+
+    didSelectImage(files) {
+
+      console.log("file",files[0]);
+    // File or Blob named mountains.jp
+
+   },
+
+    
 
     willTransition() {
         let model = this.controller.get('model');
