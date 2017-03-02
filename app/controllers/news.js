@@ -54,7 +54,7 @@ didSelectImage(files) {
             break;
         }
       }, () => {
-        this.set('downloadURL', uploadTask.snapshot.downloadURL);
+       // this.set('downloadURL', uploadTask.snapshot.downloadURL);
       });
 }}
 

@@ -1,6 +1,12 @@
 import DS from 'ember-data';
 //import * as firebase from "firebase";
+import moment from 'moment';
+
 export default Ember.Controller.extend({
+
+
+ sortProps: ['id'],
+    sortedModel: Ember.computed.sort('model', 'sortProps'),
 
 firebaseApp: Ember.inject.service(),
 storageRef: '',
@@ -67,11 +73,7 @@ didSelectImage(files) {
 
     saveLibrary(newLibrary) {
       let ctrl =  this;
-      /*newLibrary.set('days', this.get('days'));   
-      newLibrary.set('name', this.get('name'));    
-      newLibrary.set('description', this.get('description'));       
-      newLibrary.set('category', this.get('selectedCategory').get('name'));*/
-// Create the file metadata
+
    var metadata = {
      contentType: 'image/png'
    };
@@ -79,37 +81,50 @@ var storageRef = this.get('firebaseApp').storage().ref();
 
 //var uploadTask = storageRef.child('images/' + file.name).put(file, metadata);
    
-   var path = 'images/' + newLibrary.get('id') + '.png';
+   var path = 'images/' + this.get('file').name;
+
 var uploadTask = storageRef.child(path).put(this.get('file'), metadata);
+
+
 uploadTask.on('state_changed', function(snapshot){
      var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
      console.log('Upload is ' + progress + '% done');
      console.log(snapshot.state);
+
    }, function(error) {
    }, function() {
       var downloadURL = uploadTask.snapshot.downloadURL;
      
 
-       let dataFormat = Date().split(' ');
-       console.log(dataFormat);
-       newLibrary.set('date', "Data:   "+dataFormat[1]+" "+dataFormat[2]+" "+dataFormat[3]+"                      Godzina:    "+dataFormat[4]);
-      newLibrary.set('imageUrl', downloadURL);
-     // newPlan.save().then(() => ctrl.transitionToRoute('plans'));
+       let dataFormat = moment(new Date()).format('DD.MM.YYYY');
+      
+       newLibrary.set('rank',moment().format());
+       
+       if (newLibrary.get('title') == undefined) {
+          newLibrary.set('title',"");
+       }
+       if (newLibrary.get('news') == undefined) {
+          newLibrary.set('news',"");
+       }
+
+       if (newLibrary.get('imageUrl') == undefined) {
+          newLibrary.set('imageUrl',"");
+       }
+       console.log(ctrl.get('title'))
+       console.log(ctrl.get('news'))
+
+   
+     newLibrary.set('date', dataFormat);
+
+     newLibrary.set('imageUrl', downloadURL);
        newLibrary.save().then(() => ctrl.transitionToRoute('blogs'));
 
-      //newLibrary.set('file', '');
-      //ctrl.set('selectedCategory', '');
-     // ctrl.set(document.getElementById('output').src, '');
-     // ctrl.set('days', '');
-      //ctrl.set('isDisabled', true);
+    
    });
 
 
 
-      //console.log(newLibrary)
-      //newPlan.set('imageUrl', downloadURL);
-      //newPlan.save().then(() => ctrl.transitionToRoute('plans'));
-     // newLibrary.save().then(() => this.transitionTo('blogs'));
+     
     }
   }
 

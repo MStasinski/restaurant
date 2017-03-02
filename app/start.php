@@ -14,7 +14,7 @@
 
         // optional payload
         $payload = array();
-        $payload['team'] = 'India';
+        $payload['team'] = 'WTM';
         $payload['score'] = '5.6';
 
         // notification title
@@ -28,7 +28,7 @@
         
         // whether to include to image or not
         $include_image = isset($_GET['include_image']) ? TRUE : FALSE;
-            echo "dupa"
+            
 
         $push->setTitle($title);
         $push->setMessage($message);

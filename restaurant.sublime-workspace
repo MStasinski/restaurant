@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"date",
+				"Date"
+			],
+			[
+				"new",
+				"newLibrary"
+			],
+			[
 				"gri",
 				"gridLenght"
 			],
@@ -40,50 +48,93 @@
 	"buffers":
 	[
 		{
-			"file": "app/controllers/news.js",
+			"file": "app/controllers/blogs/new.js",
 			"settings":
 			{
-				"buffer_size": 1873,
+				"buffer_size": 3378,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/routes/insalates/edit.js",
+			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 687,
+				"buffer_size": 756,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/templates/navbar.hbs",
+			"file": "app/models/blog.js",
 			"settings":
 			{
-				"buffer_size": 1633,
+				"buffer_size": 206,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/routes/news.js",
+			"file": "app/models/drink.js",
 			"settings":
 			{
-				"buffer_size": 68,
+				"buffer_size": 175,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/templates/news.hbs",
+			"file": "app/config.php",
 			"settings":
 			{
-				"buffer_size": 1191,
+				"buffer_size": 234,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/firebase.php",
+			"settings":
+			{
+				"buffer_size": 2036,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/start.php",
+			"settings":
+			{
+				"buffer_size": 1627,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/insalate.js",
+			"settings":
+			{
+				"buffer_size": 176,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/styles/app.scss",
+			"file": "app/templates/blogs/index.hbs",
 			"settings":
 			{
-				"buffer_size": 473,
+				"buffer_size": 886,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/blogs/index.js",
+			"settings":
+			{
+				"buffer_size": 168,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\n\n<div class=\"form-horizontal\">\n  \n  <div class=\"form-group\">\n    <label class=\"col-sm-2 control-label\">Tytuł</label>\n    <div class=\"col-sm-10\">\n      {{input type=\"text\" value=model.title class=\"form-control\" placeholder=\"wpisz tytuł post\"}}\n    </div>\n  </div>\n\n  <div class=\"form-group\">\n    <label class=\"col-sm-2 control-label\">Wiadomość</label>\n    <div class=\"col-sm-10\">\n      {{input type=\"text\" value=model.news class=\"form-control\" placeholder=\"wpisz treść wiadomości\"}}\n    </div>\n  </div>\n \n  \n\n <label class=\"col-sm-2 control-label\"><br>(200x200)</label>\n  <div class=\"form-group\">\n    <div class=\"col-sm-2\">  \n      {{x-file-input class=\"custom-class\" multiple=false name=\"files\" action=(action \"didSelectImage\") accept=\"image/*\" alt=\"Dodaj zdjęcie\"}}\n    </div> \n  </div>\n\n\n <div class=\"form-group\">\n\n <div class=\"col-sm-offset-2 col-sm-10\">\n     <img id='output' height=\"200\" width=\"200\" hidden={{shouldHideImage}}>\n     <p></p>\n </div> \n </div>\n\n\n\n\n\n  <div class=\"form-group\">\n    <div class=\"col-sm-offset-2 col-sm-10\">\n       <button type=\"submit\" class=\"btn btn-default\" {{action 'saveLibrary' model }}>Wyślij post </button>\n    </div>\n  </div>\n</div>\n\n\n\n\n\n {{#if progress}}\n      <div style=\"margin-top:50px;\">\n        <progress class=\"progress progress-success\" value={{progress}} max=\"100\"></progress>\n      </div>\n    {{/if}}\n\n    {{#if status}}\n      <p class=\"text-primary\">{{progressText}}</p>\n    {{/if}}\n\n    {{#if downloadURL}}\n      <div class=\"text-center\">\n        <img src=\"{{downloadURL}}\" alt=\"\" class=\"img-responsive img-rounded\">\n      </div>\n  {{/if}}\n\n\n\n",
+			"file": "app/templates/blogs/new.hbs",
+			"file_size": 1613,
+			"file_write_time": 131321870308145401,
+			"settings":
+			{
+				"buffer_size": 1596,
 				"line_ending": "Unix"
 			}
 		}
@@ -135,21 +186,41 @@
 	[
 		"/D/Mobilny system zarzadzania biznesem/restaurant",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/adapters",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/components",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/pizzas",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/secondis",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/alfornos",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/blogs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/drinks",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/insalates",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/zuppas",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/alfornos",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/blogs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/styles",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/config"
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/blogs"
 	],
 	"file_history":
 	[
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/news.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/navbar.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/alfornos/index.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/blog.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/blogs/index.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/blogs/new.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/blogs/edit.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/styles/app.scss",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/news.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/blogs/edit.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/blogs/new.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/blogs.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/blogs/index.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/blogs/index.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/blogs/edit.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/router.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/drink.js",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/drinks.hbs",
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/news.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/notification.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/pasta.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/news.js",
@@ -169,11 +240,9 @@
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/pizzas/index.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/pizza.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/notification.js",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/news.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/notification.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas/index.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/insalates/index.hbs",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/navbar.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pastas/index.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/drinks/index.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alfornos/index.hbs",
@@ -187,7 +256,6 @@
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas/edit.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas/new.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/insalates.hbs",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/drinks.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alfornos.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pastas.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pizzas.hbs",
@@ -195,7 +263,6 @@
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/insalates/index.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/drinks/index.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/secondis/index.hbs",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/drink.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/drink.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/starters",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/secondis/new.js",
@@ -216,7 +283,6 @@
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/zuppas/index.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/pastas/new.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/pastas/index.js",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/controllers/alfornos/index.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/pasta.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/models/insalate.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/pastas/edit.js",
@@ -230,7 +296,6 @@
 		"/C/Users/win8/Desktop/Firebase Notifications/Firebase Notifications/firebase/start.php",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/napoje.js",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/public/start.php",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/styles/app.scss",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/public/test.php",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/public/firebase.php",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/public/push.php",
@@ -264,19 +329,7 @@
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/napoje.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/secondi.hbs",
 		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/alforno.hbs",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/dolci.hbs",
-		"/C/Users/win8/Desktop/distrada-7d516-export.json",
-		"/C/Users/win8/Desktop/testowy-122ed-export.json",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/zuppas/index.js",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/.firebaserc",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/config/environment.js",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/firebase.json",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/database.rules.json",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/dist",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/restaurant.sublime-workspace",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/restaurant.sublime-project",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/zuppas/new.js",
-		"/D/Mobilny system zarzadzania biznesem/restaurant/app/routes/zuppas/edit.js"
+		"/D/Mobilny system zarzadzania biznesem/restaurant/app/templates/dolci.hbs"
 	],
 	"find":
 	{
@@ -312,90 +365,59 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/news.js",
+					"file": "app/controllers/blogs/new.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1873,
+						"buffer_size": 3378,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								926,
-								950
+								2785,
+								2785
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 588.0,
+						"translation.y": 1008.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/routes/insalates/edit.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 687,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/templates/navbar.hbs",
+					"file": "app/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1633,
+						"buffer_size": 756,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1467,
-								1467
+								535,
+								535
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -403,24 +425,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/routes/news.js",
+					"buffer": 2,
+					"file": "app/models/blog.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 68,
+						"buffer_size": 206,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								26,
-								26
+								173,
+								182
 							]
 						],
 						"settings":
@@ -435,62 +457,235 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/templates/news.hbs",
+					"buffer": 3,
+					"file": "app/models/drink.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1191,
+						"buffer_size": 175,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								294,
-								294
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 168.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "app/styles/app.scss",
+					"buffer": 4,
+					"file": "app/config.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 473,
+						"buffer_size": 234,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								244,
-								244
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/firebase.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2036,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/start.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1627,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								907,
+								907
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 294.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/models/insalate.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/templates/blogs/index.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 886,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/controllers/blogs/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								97,
+								97
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/templates/blogs/new.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1596,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								789,
+								789
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
 					"type": "text"
 				}
 			]

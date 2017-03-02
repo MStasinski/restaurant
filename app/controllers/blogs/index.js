@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 export default Ember.Controller.extend({
-    sortProps: ['count'],
+    sortProps: ['rank:desc'],
     sortedModel: Ember.computed.sort('model', 'sortProps'),
   
 });
