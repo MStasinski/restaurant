@@ -1,19 +1,19 @@
 /* jshint node: true */
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   var ENV = {
     modulePrefix: 'restaurant-app',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
     firebase: {
-           apiKey: "AIzaSyAgK0Z-IBp2HOeMI22rGb8usfZd4KzUiE0",
-           authDomain: "distrada-7d516.firebaseapp.com",
-           databaseURL: "https://distrada-7d516.firebaseio.com",
-          storageBucket: "distrada-7d516.appspot.com",
-          messagingSenderId: "416958424421"
-        },
-    
+      apiKey: "AIzaSyAgK0Z-IBp2HOeMI22rGb8usfZd4KzUiE0",
+      authDomain: "distrada-7d516.firebaseapp.com",
+      databaseURL: "https://distrada-7d516.firebaseio.com",
+      storageBucket: "distrada-7d516.appspot.com",
+      messagingSenderId: "416958424421"
+    },
+
 
     // if using ember-cli-content-security-policy
     contentSecurityPolicy: {
@@ -41,11 +41,11 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-     ENV.APP.LOG_RESOLVER = true;
-     ENV.APP.LOG_ACTIVE_GENERATION = true;
-     ENV.APP.LOG_TRANSITIONS = true;
-     ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-     ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.APP.LOG_RESOLVER = true;
+    ENV.APP.LOG_ACTIVE_GENERATION = true;
+    ENV.APP.LOG_TRANSITIONS = true;
+    ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+    ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
   if (environment === 'test') {

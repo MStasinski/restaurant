@@ -1,6 +1,30 @@
-
+ {{#if isAuth}}
+<button {{action 'logout'}}>Logout</button>
 
 <div class="container">
-  {{partial 'navbar'}}
-  {{outlet}}
+  {{partial 'navbar'}} {{outlet}}
 </div>
+
+{{else}}
+<div class="jumbotron text-center">
+  <h1>LOGOWANIE</h1>
+
+  <br/><br/>
+
+  <p>Podaj swój email i hasło.</p>
+
+  <div class="form-horizontal form-group form-group-lg row">
+    
+    <div class="    col-xs-8 col-xs-offset-2      col-md-2 col-md-offset-5">
+      {{input type="email" value=userEmail class="form-control" placeholder="Wpisz swój email" autofocus="autofocus"}}
+       <br/><br/>
+       {{input type="password" value=userPassword class="form-control" placeholder="Please type your e-mail address." autofocus="autofocus"}}
+    <br/><br/>
+    <button class="btn btn-primary btn-lg btn-block" {{action "login"}}>Login</button>
+    </div>
+    
+  </div>
+
+  <br/><br/>
+</div>
+{{/if}}

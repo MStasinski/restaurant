@@ -7,8 +7,6 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  
-  
   this.route('pizzas', function() {
     this.route('new');
     this.route('edit', { path: '/:pizza_id/edit' });
@@ -19,16 +17,16 @@ Router.map(function() {
     this.route('edit', { path: '/:insalate_id/edit' });
   });
 
-    this.route('zuppas', function() {
-    this.route('new');
-    this.route('edit', { path: '/:zuppa_id/edit' });
-  });
-  
+  this.route('zuppas', function() {
+  this.route('new');
+  this.route('edit', { path: '/:zuppa_id/edit' });
+});
+
   this.route('alfornos', function() {
     this.route('new');
     this.route('edit', { path: '/:alforno_id/edit' });
   });
-  
+
   this.route('pastas', function() {
     this.route('new');
     this.route('edit', { path: '/:pasta_id/edit' });
@@ -54,9 +52,10 @@ Router.map(function() {
     this.route('edit', { path: '/:blog_id/edit' });
   });
 
- 
- this.route('news');
-   this.route('notification');
+
+  this.route('news');
+  this.route('notification');
+  this.route('protected');
 });
 
 export default Router;
